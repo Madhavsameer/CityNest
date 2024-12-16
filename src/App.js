@@ -17,7 +17,7 @@ const App = () => {
     setTimeout(() => {
       console.log("Setting loading to false");
       setLoading(false);
-    }, 1000);
+    }, 1400);
   }, []); // Ensure only runs once
   
 

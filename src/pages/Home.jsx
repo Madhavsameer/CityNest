@@ -11,7 +11,7 @@ const Home = () => {
     <div className="landing-container">
       <header className="landing-header">
         
-        <h1 className="header-titlea">Welcome to City Nest Patna</h1>
+        <h6 className="header-titlea">Welcome to City Nest</h6>
         <p className="header-subtitle">Shaping Lives, Nurturing Futures</p>
         <Link to="./services" className="cta-button">Explore Services</Link>
       </header>
