@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "2 BHK Apartment in Boring Road",
+    "price": "₹15,000/month",
+    "image": "first.png",
+    "location": "Boring Road, Patna",
+    "description": "Spacious 2 BHK apartment with all modern amenities.",
+    "type": "Flat"
+  },
+  {
+    "id": 2,
+    "title": "3 BHK Flat in Kankarbagh",
+    "price": "₹20,000/month",
+    "image": "second.png",
+    "location": "Kankarbagh, Patna",
+    "description": "Beautiful 3 BHK flat in a prime location.",
+    "type": "Flat"
+  },
+  {
+    "id": 3,
+    "title": "4 BHK Independent Home in Rajendra Nagar",
+    "price": "₹35,000/month",
+    "image": "first.png",
+    "location": "Rajendra Nagar, Patna",
+    "description": "Luxurious independent home with garden and parking.",
+    "type": "Home"
+  },
+  {
+    "id": 4,
+    "title": "Residential Land in Patliputra",
+    "price": "₹25,00,000",
+    "image": "second.png",
+    "location": "Patliputra, Patna",
+    "description": "Prime residential land available for construction.",
+    "type": "Land"
+  },
+  {
+    "id": 5,
+    "title": "2 BHK To-let in Ashok Nagar",
+    "price": "₹12,000/month",
+    "image": "first.png",
+    "location": "Ashok Nagar, Patna",
+    "description": "Well-maintained 2 BHK apartment available for rent.",
+    "type": "To-let"
+  },
+  {
+    "id": 6,
+    "title": "2 BHK Apartment in Kankarbagh",
+    "price": "₹18,000/month",
+    "image": "second.png",
+    "location": "Kankarbagh, Patna",
+    "description": "Spacious and affordable 2 BHK apartment for rent.",
+    "type": "To-let"
+  },
+  {
+    "id": 7,
+    "title": "3 BHK Luxury Home in Bailey Road",
+    "price": "₹50,000/month",
+    "image": "first.png",
+    "location": "Bailey Road, Patna",
+    "description": "A luxury home with modern amenities and a prime location.",
+    "type": "Home"
+  },
+  {
+    "id": 8,
+    "title": "Agricultural Land in Bihta",
+    "price": "₹10,00,000",
+    "image": "second.png",
+    "location": "Bihta, Patna",
+    "description": "Spacious agricultural land with irrigation facilities.",
+    "type": "Land"
+  },
+  {
+    "id": 9,
+    "title": "Office Space in Fraser Road",
+    "price": "₹40,000/month",
+    "image": "first.png",
+    "location": "Fraser Road, Patna",
+    "description": "Prime office space available for rent in the heart of Patna.",
+    "type": "To-let"
+  },
+  {
+    "id": 10,
+    "title": "Residential Plot in Patna City",
+    "price": "₹15,00,000",
+    "image": "second.png",
+    "location": "Patna City, Patna",
+    "description": "A residential plot in a developed locality with easy access.",
+    "type": "Land"
+  }
+]

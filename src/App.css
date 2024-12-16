@@ -1,0 +1,23 @@
+/* App.css */
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Ensure logo is on top during loading */
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo {
+  width: 150px; /* Adjust size as needed */
+  animation: fadeIn 1s ease-out;
+}

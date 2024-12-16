@@ -1,0 +1,46 @@
+/* Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Distribute items */
+  align-items: center; /* Vertically center items */
+}
+
+.navbar-brand {
+  display: flex; /* Use flexbox for logo and text */
+  align-items: center; /* Vertically center the logo and text */
+  color: #fff;
+  font-size: 28px; /* Larger font size for "City Nest" */
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+
+}
+
+.navbar-brand img {
+
+  height: 100px; /* Set a fixed height for the logo */
+  width: auto; /* Maintain the aspect ratio of the logo */
+  margin-right: 10px; /* Adds space between the logo and text */
+  
+}
+
+.navbar .nav-links {
+
+  display: flex; /* Align navbar links horizontally */
+  align-items: left; /* Vertically center the links */
+
+}
+
+.navbar .nav-link {
+
+  color: #fff;
+  margin: 0 25px;
+  text-decoration: none;
+
+}
+
+.navbar .nav-link:hover {
+  color: #f39c12;
+}
