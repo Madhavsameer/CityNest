@@ -1,12 +1,15 @@
+/* Container Styling */
 .container {
   padding: 20px;
 }
 
+/* Filter Buttons Styling */
 .filter-buttons {
-  display: flex;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 15px; /* Space between buttons */
   justify-content: center;
   margin-bottom: 20px;
-  gap: 15px;
 }
 
 .filter-buttons button {
@@ -17,6 +20,7 @@
   background-color: #f0f0f0;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .filter-buttons button.active {
@@ -30,9 +34,10 @@
   color: white;
 }
 
+/* Listings Section */
 .listings {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive card layout */
   gap: 20px;
   opacity: 0;
   animation: fadeIn 1s forwards; /* Fade-in animation for the entire grid */
@@ -47,11 +52,11 @@
   }
 }
 
+/* Individual Card Animation */
 .card {
   opacity: 0;
   transform: translateY(20px);
   animation: slideIn 0.5s ease-out forwards;
-  animation-delay: 0.3s;
 }
 
 @keyframes slideIn {
@@ -105,19 +110,21 @@
   animation-delay: 2.1s;
 }
 
+/* Loading Message */
 .loading-message {
   font-size: 18px;
   color: #555;
   text-align: center;
 }
 
-.no-results {
-  font-size: 16px;
-  color: #888;
+/* No Results Message */
+.no-results-message {
   text-align: center;
-  margin-top: 20px;
+  color: #ff0000;
+  font-weight: bold;
 }
 
+/* Search Bar Styling */
 .search-bar {
   margin: 20px 0;
   text-align: center;
@@ -131,13 +138,7 @@
   border-radius: 5px;
 }
 
-.no-results-message {
-  text-align: center;
-  color: #ff0000;
-  font-weight: bold;
-}
-
-/* Styling and animation for the "Available Properties" title */
+/* Title Styling with Animation */
 h1 {
   opacity: 0;
   animation: fadeInText 1s ease-out forwards, textDecorate 2s ease-out forwards;

@@ -28,7 +28,7 @@ const Navbar = () => {
       {/* Links Section */}
       <div className={`nav-links ${isOpen ? 'show' : ''}`}>
         <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-        <Link to="/listings" className="nav-link" onClick={() => setIsOpen(false)}>Listings</Link>
+        <Link to="/listings" className="nav-link" onClick={() => setIsOpen(false)}>Properties</Link>
         <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About</Link>
         <Link to="/services" className="nav-link" onClick={() => setIsOpen(false)}>Services</Link>
         <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact</Link>
