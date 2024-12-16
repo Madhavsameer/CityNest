@@ -19,8 +19,12 @@ const App = () => {
       setLoading(false);
     }, 1000);
   }, []); // Ensure only runs once
+  
+
+
 
   return (
+
     <Router>
       {loading ? (
         <div className="logo-container">

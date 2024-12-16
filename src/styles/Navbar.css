@@ -1,46 +1,99 @@
-/* Navbar.css */
+/* Navbar Styling */
 .navbar {
   background-color: #333;
-  padding: 10px;
-  display: flex; /* Enable flexbox */
-  justify-content: space-between; /* Distribute items */
-  align-items: center; /* Vertically center items */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .navbar-brand {
-  display: flex; /* Use flexbox for logo and text */
-  align-items: center; /* Vertically center the logo and text */
+  display: flex;
+  align-items: center;
   color: #fff;
-  font-size: 28px; /* Larger font size for "City Nest" */
+  font-size: 28px;
   text-decoration: none;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
-
 }
 
 .navbar-brand img {
-
-  height: 100px; /* Set a fixed height for the logo */
-  width: auto; /* Maintain the aspect ratio of the logo */
-  margin-right: 10px; /* Adds space between the logo and text */
-  
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
 
-.navbar .nav-links {
-
-  display: flex; /* Align navbar links horizontally */
-  align-items: left; /* Vertically center the links */
-
+/* Nav Links Styling */
+.nav-links {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10;
 }
 
-.navbar .nav-link {
+.nav-links.show {
+  display: flex; /* Display on toggle */
+}
 
+.nav-link {
   color: #fff;
-  margin: 0 25px;
   text-decoration: none;
-
+  font-size: 16px;
+  padding: 10px 0;
 }
 
-.navbar .nav-link:hover {
+.nav-link:hover {
   color: #f39c12;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: flex; /* Always display for testing */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger .line.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger .line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .line.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* Hide hamburger icon */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    gap: 20px;
+  }
 }
