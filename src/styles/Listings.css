@@ -1,6 +1,8 @@
 /* Container Styling */
+
 .container {
   padding: 20px;
+  background-color: #ffffff;
 }
 
 /* Filter Buttons Styling */
@@ -131,7 +133,7 @@
 }
 
 .search-input {
-  width: 80%;
+  width: 90%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;

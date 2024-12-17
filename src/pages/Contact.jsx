@@ -13,7 +13,7 @@ const Contact = () => {
             title="Google Forms"
             src="https://docs.google.com/forms/d/e/1FAIpQLSeAm7O_8c-no7vxR5mvZ8X3DlgidVB1g-qQ7SC1ZQQbHb_4ng/viewform?embedded=true"
             width="100%"
-            height="1300vh"
+            height="1320vh"
             style={{ border: 0 }}
             allowFullScreen="yes"
             loading="lazy"

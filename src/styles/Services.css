@@ -1,9 +1,8 @@
-/* Services.css */
+/* Services container */
 .services {
   text-align: center;
   padding: 40px 20px;
   background-color: #f9f9f9;
-  margin-bottom: 150px;
 }
 
 .services__title {
@@ -19,6 +18,7 @@
   margin-top: 20px;
 }
 
+/* Ensures the entire card is clickable */
 .service__card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -26,12 +26,22 @@
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Ensures anchor tag takes full width */
 }
 
+/* Hover effect */
 .service__card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.05); /* Slight scale effect */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05); /* Slight brightening on hover */
+}
+
+/* Active/focus effect for better accessibility */
+.service__card:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff; /* Add a blue border when focused */
 }
 
 .service__icon {

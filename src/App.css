@@ -1,23 +1,115 @@
-/* App.css */
+/* Fullscreen body setup */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: white; /* Initial background color white */
+  overflow: hidden; /* Prevent scrolling during animation */
+  transition: background-color 1s ease; /* Smooth transition to white after animation */
+}
+
+/* Full-screen wrapper for animation */
+.animation-wrapper {
+  position: fixed; /* Full-screen position */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #000000, #1a1a1a); /* Black background during animation */
+  animation: backgroundPulse 2.5s forwards; /* Apply animation for background color change */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Keyframe animation to transition background color to white */
+@keyframes backgroundPulse {
+  0% {
+    background: radial-gradient(circle, #000000, #1a1a1a); /* Black background during animation */
+  }
+  100% {
+    background: rgb(35, 35, 35); /* Transition to white after animation ends */
+  }
+}
+
+/* Main logo container */
 .logo-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10; /* Ensure logo is on top during loading */
-  animation: fadeIn 1s ease-out;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: logoBurst 1.5s ease-out forwards;
 }
 
-@keyframes fadeIn {
-  from {
+/* Logo appearance with burst animation */
+@keyframes logoBurst {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
-  to {
+  60% {
+    transform: translate(-50%, -50%) scale(1.2);
     opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
-.logo {
-  width: 150px; /* Adjust size as needed */
-  animation: fadeIn 1s ease-out;
+/* Pulsating circular waves */
+.circle-wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  border-radius: 50%;
+  animation: pulseWave 2.5s infinite ease-out;
+  opacity: 0;
+}
+
+.circle-wave:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.circle-wave:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.circle-wave:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes pulseWave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Particle sparkles (futuristic shooting effect) */
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 215, 0, 0.8);
+  border-radius: 50%;
+  animation: shootSparkle 1.5s forwards;
+}
+
+@keyframes shootSparkle {
+  from {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(calc(-50vw + 100px), calc(-50vh + 100px)) scale(2);
+    opacity: 0;
+  }
 }
