@@ -4,6 +4,47 @@
   background-color: #f4f4f4; /* Light background for the contact section */
 }
 
+/* Engaging Message Styling */
+.contact-message {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  animation: bounceIn 2s ease-out forwards;
+}
+
+.contact-message span {
+  color: #f39c12; /* Highlight color for "Contact with us!" */
+  animation: textHighlight 1.5s ease-out infinite alternate;
+}
+
+/* Bounce-In Animation for the Message */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Highlighting effect for the 'Contact with us!' part */
+@keyframes textHighlight {
+  0% {
+    color: #f39c12;
+  }
+  100% {
+    color: #e67e22;
+  }
+}
+
 /* Form Container */
 .formc {
   margin: 20px 0;
@@ -11,11 +52,6 @@
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-}
-
-/* Google Maps Container */
-.map-container {
-  margin: 20px 0;
 }
 
 /* Floating Buttons */

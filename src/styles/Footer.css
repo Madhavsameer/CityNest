@@ -1,13 +1,45 @@
-/* Footer.css */
+/* Footer Styles */
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-icons {
+    margin-top: 10px;
   }
-  
-  .footer p {
-    margin: 0;
-    font-size: 16px;
+
+  .social-icon {
+    font-size: 25px;
+    margin: 0 10px;
   }
-  
+}
