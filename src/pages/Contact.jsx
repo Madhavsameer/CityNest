@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Contact.css'; // Ensure to import the updated CSS
 
+
 const Contact = () => {
   return (
     <div>

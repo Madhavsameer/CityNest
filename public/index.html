@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character Encoding -->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#2E3B4E" />
+
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="City Nest offers top-notch real estate and to-let services in Patna, Bihar. Explore flats, houses, and commercial properties for rent or purchase."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="keywords"
+      content="Real Estate Patna,  To-Let Services Patna, Flats in Patna, Houses for Rent Patna, City Nest Patna, Patna me Jamin, Patna, City nest"
+    />
+    <meta name="author" content="City Nest" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>City Nest</title>
+    <!-- Open Graph Meta Tags (Social Media) -->
+    <meta property="og:title" content="City Nest - Real Estate and To-Let Services in Patna" />
+    <meta
+      property="og:description"
+      content="City Nest offers reliable real estate and to-let services in Patna, Bihar. Find your perfect home, rental property, or commercial space."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:url" content="https://your-website-url.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Schema Markup for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "City Nest",
+        "description": "City Nest provides top-notch real estate and to-let services in Patna, Bihar.",
+        "url": "https://your-website-url.com",
+        "logo": "https://your-website-url.com/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ramkrishna Nagar Patna, Bihar",
+          "addressLocality": "Patna",
+          "addressRegion": "Bihar",
+          "postalCode": "800027",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-7488523970",
+          "contactType": "Customer Service"
+        }
+      }
+    </script>
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Title -->
+    <title>City Nest - Real Estate and To-Let Services in Patna</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

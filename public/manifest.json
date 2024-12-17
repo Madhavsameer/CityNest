@@ -1,6 +1,6 @@
 {
   "short_name": "City Nest",
-  "name": "Create React App Sample",
+  "name": "City Nest - Real Estate and To-Let Services in Patna",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#2E3B4E",
+  "background_color": "#FFFFFF"
 }
