@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import PropertyCard from "../components/PropertyCard";
-import propertiesData from "../data/properties.json";
+import propertiesData from "../data/properties.json"; // Import property data
 import "../styles/Listings.css";
 
 const Listings = () => {
@@ -10,13 +11,12 @@ const Listings = () => {
   const [searchQuery, setSearchQuery] = useState(""); // Search input
   const [activeFilter, setActiveFilter] = useState("All"); // Active filter (e.g., 'All', 'To-let', 'Flat', 'Land')
 
+  // Load properties data and filter them
   useEffect(() => {
-    // Simulate data loading
-    setTimeout(() => {
-      setProperties(propertiesData);
-      setFilteredProperties(propertiesData); // Initialize with all properties
-      setLoading(false);
-    }, 500);
+    // Simulate fetching data or directly load from the data file
+    setProperties(propertiesData);
+    setFilteredProperties(propertiesData); // Initialize with all properties
+    setLoading(false); // Set loading to false after data is loaded
   }, []);
 
   // Handle filter button click
@@ -63,7 +63,7 @@ const Listings = () => {
 
       {/* Filter Buttons */}
       <div className="filter-buttons">
-        {["All", "Flat", "Home","Land", "To-let"].map((type) => (
+        {["All", "Flat", "Home", "Land", "To-let"].map((type) => (
           <button
             key={type}
             className={activeFilter === type ? "active" : ""}

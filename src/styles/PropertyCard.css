@@ -1,52 +1,78 @@
+/* PropertyCard.css */
+
 .card {
-  margin: 20px auto;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 18rem;
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: "Arial", sans-serif;
+  margin: 1rem;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-img-top {
+  width: 100%;
   height: 200px;
   object-fit: cover;
-  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
-.card-img-top:hover {
-  opacity: 0.85;
+.card:hover .card-img-top {
+  transform: scale(1.05);
 }
 
 .card-body {
-  padding: 20px;
+  padding: 1.5rem;
   text-align: center;
+  background: #f9f9f9;
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #2c3e50;
+  margin-bottom: 0.5rem;
 }
 
 .card-text {
-  font-size: 16px;
-  color: #7f8c8d;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.card-text strong {
+  font-size: 1.2rem;
+  color: #1abc9c;
 }
 
 .btn-primary {
-  background-color: #3498db;
+  background-color: #3277c5;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: #2980b9;
+  background-color: #16a085;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 1rem auto;
+  }
 }

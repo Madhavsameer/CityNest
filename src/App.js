@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import PropertyDetails from "./pages/PropertyDetails";
 import logo from "./assets/logo.png"; // Replace with your logo path
 import "./App.css";
 
@@ -64,6 +65,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/listings" element={<Listings />} />
+            <Route path="/property/:id" element={<PropertyDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
