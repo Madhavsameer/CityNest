@@ -4,7 +4,7 @@ import countapi from "countapi-js";
 import "../styles/Footer.css";
 
 const Footer = () => {
-  const [visitCount, setVisitCount] = useState(0);
+  const [visitCount, setVisitCount] = useState(856);
 
   useEffect(() => {
     // Hit CountAPI to increment and retrieve the visit count
