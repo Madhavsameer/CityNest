@@ -1,13 +1,25 @@
-import React from 'react';
-import '../styles/Footer.css';  // Importing CSS from styles folder
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'; // Importing icons from react-icons
+import React, { useState, useEffect } from "react";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import countapi from "countapi-js";
+import "../styles/Footer.css";
 
 const Footer = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    // Hit CountAPI to increment and retrieve the visit count
+    countapi.hit('https://citynest.netlify.app', 'visit')
+      .then((result) => {
+        console.log('Visitor count updated:', result.value);
+        setVisitCount(result.value);
+      })
+      .catch((error) => console.error('Error with CountAPI:', error));
+  }, []);
+
   return (
     <footer className="footer">
-      <p>&copy; 2024 City Nest | All rights reserved | </p>
-
-      {/* Social Media Links */}
+      <p>&copy; 2024 City Nest | All rights reserved</p>
+      <p>Visitor Count: {visitCount}</p>
       <div className="social-icons">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="social-icon" />

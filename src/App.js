@@ -21,6 +21,8 @@ const App = () => {
       id: i,
       x: Math.random() * window.innerWidth - window.innerWidth / 2,
       y: Math.random() * window.innerHeight - window.innerHeight / 2,
+
+      
     }));
     setSparkles(newSparkles);
 
