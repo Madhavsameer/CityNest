@@ -5,7 +5,7 @@
     "id": 1,
     "title": "2 BHK Apartment in Boring Road",
     "price": "₹15,000/month",
-    "images": ["first.png", "second.png", "second.png"],
+    "images": ["first.png", "second.png", "first.png"],
     "location": "Boring Road, Patna",
     "description": "Spacious 2 BHK apartment with all modern amenities.",
     "type": "Flat"
@@ -18,7 +18,7 @@
     "id": 2,
     "title": "3 BHK Flat in Kankarbagh",
     "price": "₹20,000/month",
-    "images": ["second.png", "second2.png"],
+    "images": ["second.png", "first.png"],
     "location": "Kankarbagh, Patna",
     "description": "Beautiful 3 BHK flat in a prime location.",
     "type": "Flat"
