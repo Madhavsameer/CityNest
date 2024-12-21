@@ -8,7 +8,7 @@ const Footer = () => {
 
   useEffect(() => {
     // Hit CountAPI to increment and retrieve the visit count
-    countapi.hit('https://citynest.netlify.app', 'visit')
+    countapi.hit('citynestpatna', 'visit')
       .then((result) => {
         console.log('Visitor count updated:', result.value);
         setVisitCount(result.value);
