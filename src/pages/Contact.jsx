@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Contact.css'; // Ensure to import the updated CSS
 
-
 const Contact = () => {
   return (
     <div>
@@ -12,17 +11,48 @@ const Contact = () => {
 
       <section id="contact" className="contact-section">
 
-        {/* Google Form Embed */}
+        {/* Netlify Form */}
         <div className="formc">
-          <iframe
-            title="Google Forms"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeAm7O_8c-no7vxR5mvZ8X3DlgidVB1g-qQ7SC1ZQQbHb_4ng/viewform?embedded=true"
-            width="100%"
-            height="1360vh"
-            style={{ border: 0 }}
-            allowFullScreen="yes"
-            loading="lazy"
-          ></iframe>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thank-you" // Redirect after form submission (optional)
+          >
+            {/* Hidden input for Netlify form handling */}
+            <input type="hidden" name="form-name" value="contact" />
+
+            {/* Honeypot field (hidden to users, used to deter bots) */}
+            <div style={{ display: 'none' }}>
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </div>
+
+            {/* Name Field */}
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            {/* Email Field */}
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            {/* Message Field */}
+            <div className="form-group">
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            {/* Submit Button */}
+            <div className="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
         </div>
 
         {/* Corrected Google Maps iFrame */}
