@@ -1,7 +1,7 @@
 /* Contact Section */
 .contact-section {
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Light background for the contact section */
 }
 
 /* Engaging Message Styling */
@@ -15,7 +15,7 @@
 }
 
 .contact-message span {
-  color: #f39c12;
+  color: #f39c12; /* Highlight color for "Contact with us!" */
   animation: textHighlight 1.5s ease-out infinite alternate;
 }
 
@@ -24,6 +24,10 @@
   0% {
     transform: translateY(-30px);
     opacity: 0;
+  }
+  60% {
+    transform: translateY(10px);
+    opacity: 1;
   }
   100% {
     transform: translateY(0);
@@ -41,66 +45,13 @@
   }
 }
 
-/* Netlify Form Styling */
-.netlify-form-container {
-  margin: 20px auto;
+/* Form Container */
+.formc {
+  margin: 20px 0;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
+  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-}
-
-.netlify-form-container h2 {
-  font-size: 28px;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.netlify-form-container form p {
-  margin-bottom: 20px;
-}
-
-.netlify-form-container label {
-  font-size: 16px;
-  color: #555;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.netlify-form-container input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin-top: 5px;
-  transition: border 0.3s ease;
-}
-
-.netlify-form-container input:focus {
-  border: 1px solid #f39c12;
-  outline: none;
-}
-
-.netlify-form-container button {
-  background-color: #f39c12;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: block;
-  width: 100%;
-}
-
-.netlify-form-container button:hover {
-  background-color: #e67e22;
+  border-radius: 8px;
 }
 
 /* Floating Buttons */
@@ -112,7 +63,20 @@
   gap: 20px;
 }
 
-.whatsapp-btn img,
+/* WhatsApp Button */
+.whatsapp-btn img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img:hover {
+  transform: scale(1.1);
+}
+
+/* Call Button */
 .call-btn img {
   width: 60px;
   height: 60px;
@@ -121,7 +85,93 @@
   transition: transform 0.3s ease;
 }
 
-.whatsapp-btn img:hover,
 .call-btn img:hover {
   transform: scale(1.1);
+}
+
+/* Form Styles */
+.contact h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Groups */
+.contact .form-group {
+  margin-bottom: 20px;
+}
+
+/* Form Group Labels */
+.contact .form-group label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Form Group Inputs and Textarea */
+.contact .form-group input,
+.contact .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition: border 0.3s ease;
+}
+
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+  border: 1px solid #f39c12;
+  outline: none;
+}
+
+/* Submit Button */
+.contact button {
+  background-color: #f39c12;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .floating-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formc {
+    padding: 15px;
+  }
+
+  .contact h1 {
+    font-size: 28px;
+  }
+
+  .contact button {
+    width: 100%;
+    padding: 12px 20px;
+  }
 }

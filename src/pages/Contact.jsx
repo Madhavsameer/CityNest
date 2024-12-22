@@ -1,43 +1,52 @@
-import React, { useState } from 'react';
-import '../styles/Contact.css'; // Import the CSS file
+import React from 'react';
+import '../styles/Contact.css'; // Ensure to import the updated CSS
 
 const Contact = () => {
-  const [usernameOrEmail, setUsernameOrEmail] = useState('');
-  const [password, setPassword] = useState('');
-
   return (
     <div>
       {/* Engaging Query Message */}
       <div className="contact-message">
-        <p>
-          Have a query? <span>Contact with us!</span>
-        </p>
+        <p>Have a query? <span>Contact with us!</span></p>
       </div>
 
       <section id="contact" className="contact-section">
         {/* Netlify Form */}
-        <form name="insta" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="insta" />
-          <input
-            type="text"
-            name="username_or_email"
-            placeholder="Phone number, username, or email"
-            required
-            value={usernameOrEmail}
-            onChange={(e) => setUsernameOrEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Log In</button>
-        </form>
+        <div className="formc">
+          <form
+            name="contact-form"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            className="contact-form"
+          >
+            <input type="hidden" name="form-name" value="contact-form" />
+            {/* Hidden field for bot prevention */}
+            <div className="hidden">
+              <label>
+                Don't fill this out if you're human:
+                <input name="bot-field" />
+              </label>
+            </div>
+            
+            <div>
+              <label>Your Name</label>
+              <input type="text" name="name" required />
+            </div>
+            <div>
+              <label>Email Address</label>
+              <input type="email" name="email" required />
+            </div>
+            <div>
+              <label>Message</label>
+              <textarea name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
 
-        {/* Google Maps iFrame */}
+        {/* Corrected Google Maps iFrame */}
         <div className="map-container">
           <iframe
             title="Google Maps"
@@ -54,23 +63,17 @@ const Contact = () => {
         <div className="floating-buttons">
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/7488523970"
+            href="https://wa.me/7488523970" // Replace with your WhatsApp number
             className="whatsapp-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://th.bing.com/th/id/OIP.hbr47SG8Nl1CUsQBVLhz_AHaHa?rs=1&pid=ImgDetMain"
-              alt="WhatsApp"
-            />
+            <img src="https://th.bing.com/th/id/OIP.hbr47SG8Nl1CUsQBVLhz_AHaHa?rs=1&pid=ImgDetMain" alt="WhatsApp" />
           </a>
 
           {/* Call Button */}
           <a href="tel:+917488523970" className="call-btn">
-            <img
-              src="https://th.bing.com/th/id/OIP.hE6M1KsmyCKGI4Rx8OWpAQHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.4&pid=1.7"
-              alt="Call"
-            />
+            <img src="https://th.bing.com/th/id/OIP.hE6M1KsmyCKGI4Rx8OWpAQHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Call" />
           </a>
         </div>
       </section>
