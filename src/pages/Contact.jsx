@@ -19,7 +19,8 @@ const Contact = () => {
             netlify-honeypot="bot-field"
             className="contact-form"
           >
-            <input type="hidden" name="form-name" value="contact-form" />
+            <input type="hidden" name="_next" value="https://citynest.netlify.app/thank-you" />
+
             {/* Hidden field for bot prevention */}
             <div className="hidden">
               <label>
