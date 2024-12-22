@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Contact.css'; // Ensure to import the updated CSS
 
+
 const Contact = () => {
   return (
     <div>
@@ -10,41 +11,18 @@ const Contact = () => {
       </div>
 
       <section id="contact" className="contact-section">
-        {/* Netlify Form */}
-        <div className="formc">
-          <form
-            name="contact-form"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            className="contact-form"
-          >
-            <input type="hidden" name="_next" value="https://citynest.netlify.app/thank-you" />
 
-            {/* Hidden field for bot prevention */}
-            <div className="hidden">
-              <label>
-                Don't fill this out if you're human:
-                <input name="bot-field" />
-              </label>
-            </div>
-            
-            <div>
-              <label>Your Name</label>
-              <input type="text" name="name" required />
-            </div>
-            <div>
-              <label>Email Address</label>
-              <input type="email" name="email" required />
-            </div>
-            <div>
-              <label>Message</label>
-              <textarea name="message" required></textarea>
-            </div>
-            <div>
-              <button type="submit">Submit</button>
-            </div>
-          </form>
+        {/* Google Form Embed */}
+        <div className="formc">
+          <iframe
+            title="Google Forms"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeAm7O_8c-no7vxR5mvZ8X3DlgidVB1g-qQ7SC1ZQQbHb_4ng/viewform?embedded=true"
+            width="100%"
+            height="1360vh"
+            style={{ border: 0 }}
+            allowFullScreen="yes"
+            loading="lazy"
+          ></iframe>
         </div>
 
         {/* Corrected Google Maps iFrame */}
