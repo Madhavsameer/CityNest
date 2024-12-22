@@ -11,51 +11,8 @@ const Contact = () => {
 
       <section id="contact" className="contact-section">
 
-        {/* Netlify Form */}
-        <div className="formc">
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/" // Redirect after form submission (optional)
-          >
-            {/* Hidden input for Netlify form handling */}
-            <input type="hidden" name="form-name" value="contact" />
 
-            {/* Honeypot field (hidden to users, used to deter bots) */}
-            <div style={{ display: 'none' }}>
-              <label>
-                Don’t fill this out: <input name="bot-field" />
-              </label>
-            </div>
-
-            {/* Name Field */}
-            <div className="form-group">
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-
-            {/* Email Field */}
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            {/* Message Field */}
-            <div className="form-group">
-              <label htmlFor="message">Message:</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-
-            {/* Submit Button */}
-            <div className="form-group">
-              <button type="submit">Submit</button>
-            </div>
-          </form>
-        </div>
-
-        {/* Corrected Google Maps iFrame */}
+      
         <div className="map-container">
           <iframe
             title="Google Maps"
