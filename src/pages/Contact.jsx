@@ -18,7 +18,7 @@ const Contact = () => {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            action="/thank-you" // Redirect after form submission (optional)
+            action="/" // Redirect after form submission (optional)
           >
             {/* Hidden input for Netlify form handling */}
             <input type="hidden" name="form-name" value="contact" />
