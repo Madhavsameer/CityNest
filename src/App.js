@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import PropertyDetails from "./pages/PropertyDetails";
 import logo from "./assets/logo.png"; // Replace with your logo path
 import "./App.css";
+import Form from "./components/Form";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -64,6 +65,7 @@ const App = () => {
       ) : (
         <>
           <Navbar />
+          <Form/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/listings" element={<Listings />} />
