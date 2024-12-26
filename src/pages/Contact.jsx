@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="map-container">
           <iframe
             title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7197.3247596186575!2d85.14890345951322!3d25.582896970021686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a7f7accf4697%3A0x3998397d4963f83b!2skaushalya%20niwas!5e0!3m2!1sen!2sin!4v1734276446516!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d238.98111970607422!2d85.14855906276549!3d25.58227327277533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39f2a7da5eeffc05%3A0xb067975cf72b7c2d!2sCity%20Nest%20patna%2C%20E%20Ram%20Krishna%20Nagar%20Rd%2C%20East%20Ram%20Krishna%20Nagar%2C%20Ramkrishan%20Nagar%2C%20Patna%2C%20Bihar%20800027!3m2!1d25.5824329!2d85.14877729999999!5e0!3m2!1sen!2sin!4v1735205209193!5m2!1sen!2sin"
             width="100%"
             height="400"
             style={{ border: 0 }}
